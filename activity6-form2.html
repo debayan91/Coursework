@@ -1,0 +1,91 @@
+<html>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-weight:lighter;
+            margin: 100px;
+            margin-left: 200px;
+            margin-right: 800px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border: 2px solid #4CAF50;
+            padding: 30px;
+        }
+        legend {
+            color: #0a835b;
+        }
+        label {
+            display:block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            margin: 5px 0;
+
+        }
+        .scroll-select {
+            height: 70px;
+        }
+        button {
+            background-color: #4CAF50;
+            padding: 10px 15px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personal Information</h1>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend style="text-align:center">About You</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </fieldset>
+        <fieldset>
+            <legend style="text-align:center">Preferences</legend>
+            <label >Hobbies<hr></label>
+            <label for="reading">Sports</label>
+            <input type="checkbox" id="reading" name="hobbies" value="Sports">
+            <label for="traveling">Traveling</label>
+            <input type="checkbox" id="traveling" name="hobbies" value="Traveling">
+            <label for="country">Region<hr></label>
+            <select id="country" name="country" class="scroll-select" size="3">
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="india">Asia</option>
+            </select>
+            <label for="age">Age Group<hr></label>
+            <select id="age" name="age">
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="36-50">36-50</option>
+            </select>
+            <label for="skills">Skills<hr></label>
+            <input type="text" id="skills" name="skills" list="skills-list">
+            <datalist id="skills-list">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="Python">
+                <option value="Java">
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Feedback</legend>
+            <label for="suggestions">Suggestions<hr></label>
+            <textarea id="suggestions" name="suggestions" rows="4" placeholder="..."></textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<html>
+    <title>Form Fields - Activity 6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e7f4f3;
+            height: 70px;
+            width: 27%;
+            margin: 40px;
+        }
+        .signup-container {
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .signup-container h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .signup-container p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border: 1.2px solid #d8d6d6;
+        }
+
+        .form-group img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .form-group input {
+            border: none;
+            background: transparent;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .form-group input::placeholder {
+            color: #aaa;
+        }
+
+        .checkbox-group {
+            text-align: left;
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group input {
+            margin-right: 5px;
+        }
+
+        .checkbox-group a {
+            color: #4caf93;
+            text-decoration: none;
+        }
+
+        .signup-button {
+            width: 100%;
+            background-color: #4caf93;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .signup-button:hover {
+            background-color: #3e9476;
+        }
+        
+        img {
+            width: 13px; 
+            height: auto; 
+        }
+        .form-group input:focus {
+            border: none;
+            outline: none; 
+        }
+    </style>
+    <h1><b>Sign Up</b></h1>
+    <p>Please fill in this form to create an account!</p>
+    <body>
+        <div class="form-container">
+            <form action="/Users/debayan/untitled folder/act6-f1login.html">
+                <div class="form-group">
+                    <img src="https://cdn-icons-png.flaticon.com/256/456/456212.png" alt="User Icon">
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <img src="https://cdn-icons-png.flaticon.com/256/2099/2099199.png" alt="Email Icon">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <img src="https://cdn-icons-png.flaticon.com/256/11117/11117396.png" alt="Password Icon">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <img src="https://cdn-icons-png.flaticon.com/256/11117/11117396.png" alt="Password Icon">
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+                <div class="checkbox-group">
+                <input type="checkbox" id="terms">
+                <label for="terms">I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a></label>
+            </div>
+            <button type="submit" class="signup-button">Sign Up</button>
+            </form>
+        </div>
+    </body>
+</html>
