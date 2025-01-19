@@ -3,9 +3,9 @@
         body {
             font-family: Arial, sans-serif;
             font-weight:lighter;
-            margin: 100px;
-            margin-left: 200px;
-            margin-right: 800px;
+            display:flex;
+            place-items:center;
+            justify-content: center;
         }
         fieldset {
             margin-bottom: 20px;
@@ -36,6 +36,7 @@
     </style>
 </head>
 <body>
+    <div class="a">
     <h1>Personal Information</h1>
     <form action="#" method="POST">
         <fieldset>
@@ -82,11 +83,12 @@
             </datalist>
         </fieldset>
         <fieldset>
-            <legend>Feedback</legend>
+            <legend style="text-align:center">Feedback</legend>
             <label for="suggestions">Suggestions<hr></label>
             <textarea id="suggestions" name="suggestions" rows="4" placeholder="..."></textarea>
         </fieldset>
         <button type="submit">Submit</button>
     </form>
+    </div>
 </body>
 </html>
