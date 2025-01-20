@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    
+}
+body{
+    background : linear-gradient(to bottom,black,rgba(255, 255, 255, 0)),url('https://images.pexels.com/photos/265152/pexels-photo-265152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding:1em;
+    letter-spacing: 0.3em;
+    font-size:3em;
+}
+a{
+    color:rgb(190, 187, 187);
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover{
+    color:white;
+}
+a:hover::first-letter{
+    color: rgb(34, 126, 225);
+}
+nav{
+    position: sticky;
+    top:10%;
+    width:70%;
+    border-radius: 9em;
+    margin-left: 15%;
+    margin-right: 5%;
+    padding: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.275);
+    background : linear-gradient(to left,rgba(0, 0, 0, 0.589),rgba(26, 26, 26, 0.713));
+    height: 1.2em;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    z-index: 1000;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.525);
+}
+.h{
+    position: absolute;
+    margin-top: 6em;
+    font-size: 10px;
+    color:rgb(34, 126, 225);
+}
+article{
+    padding:5%;
+    margin:4%;
+    line-height: 2em;
+    background : linear-gradient(to bottom right,rgba(0, 0, 0, 0.745),rgba(2, 109, 202, 0.538));
+    border-radius:2.2em;
+    text-align: center;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.53);
+}
+section{
+    padding:5%;
+    margin:4%;
+    line-height: 2em;
+    background : linear-gradient(to bottom right,rgba(0, 0, 0, 0.745),rgba(2, 109, 202, 0.538));
+    border-radius:2.2em;
+    text-align: center;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.53);
+}
+hr{
+    background : linear-gradient(to right,rgba(0, 0, 0, 0),rgb(34, 126, 225),rgba(0, 0, 0, 0));
+    border : none;
+    height : 2px;
+
+}
+span{
+    color:rgb(34, 126, 225);font-weight: bold;
+
+}
+.s{
+    font-weight:100;
+    letter-spacing: 1em;
+    font-size: large;
+}
+iframe{
+    border-radius: 1.3em;
+}
+footer{
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.744),rgba(0, 0, 0, 0));
+}
+.final{
+    background: linear-gradient(to top,black,rgba(0, 0, 0, 0.744));
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.x{
+    justify-content: left;
+    margin:0;
+}
+.y{
+    justify-content: right;
+    margin:0;
+    padding: 1.4em;
+
+}
+ul{
+    list-style-type:none;
+}
+
+aside {
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 30%;
+    background-color: rgba(0, 0, 0, 0.539);
+    width: 5em;
+    height: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    transition: width 0.5s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    border-radius: 3em 0 0 3em;
+}
+
+aside:hover {
+    width: 220px;
+}
+
+.social-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.ss {
+    display: flex;
+    align-items: center;
+    gap: 1EM;
+    text-decoration: none;
+    color: white;
+    transition: color 0.7s ease;
+}
+
+.ss:hover {
+    color: #34a853;
+}
+
+.ss i {
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+    background-color: #444;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.7s ease;
+}
+
+.ss:hover i {
+    background-color:rgb(34, 126, 225);
+}
+
+.social-text {
+    opacity: 0;
+    transition: all 0.7s ease;
+    font-weight: 100;
+    color:gray;
+}
+
+aside:hover .social-text {
+    opacity: 1;
+    color: rgb(34, 126, 225);
+}
+
+form {
+
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.53);
+padding: 3em;
+background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.745), rgba(2, 109, 202, 0.538));
+border-radius: 2.2em;
+margin-bottom: 2em;
+}
+
+form input,
+form textarea {
+width: 20em;
+height:2.5em;
+border: 1px solid #444;
+background-color: rgba(0, 0, 0, 0.19);
+color: white;
+border-radius: 0.7em;
+
+}
+
+form button {
+padding: 0.5em 1em;
+background-color: rgba(0, 0, 0, 0);
+color:rgb(34, 126, 225);
+border: 1px solid rgb(34, 126, 225);
+border-radius: 1.5em;
+font-size: 0.%;
+cursor: pointer;
+transition: background-color 0.7s;
+}
+
+form button:hover {
+background-color: rgb(34, 126, 225);
+color:white;
+}
+
+form label {
+display: block;
+margin-bottom: 0.5em;
+color: white;
+}
+
+#message{
+height: 6em;
+}
+button{
+display: block;
+margin: 0.5em auto;
+}
