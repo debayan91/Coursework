@@ -5,6 +5,26 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     
+}/* Styles for larger screens */
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Styles for smaller screens */
+@media (max-width: 767px) {
+  .container {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
 }
 body{
     background : linear-gradient(to bottom,black,rgba(255, 255, 255, 0)),url('https://images.pexels.com/photos/265152/pexels-photo-265152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
