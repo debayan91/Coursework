@@ -22,6 +22,8 @@ a{
     letter-spacing: 0.1em;
     text-decoration: none;
     transition: color 0.7s ease;
+    overflow: hidden;
+    
 }
 a:hover{
     color:white;
@@ -29,8 +31,9 @@ a:hover{
 nav{
     position: sticky;
     top:6em;
-    width:fit-content;
+    width:70em;
     border-radius: 9em;
+    max-width: 80vw;
     padding: 1em;
     border: 1px solid rgba(255, 255, 255, 0.275);
     background : linear-gradient(to left,rgba(0, 0, 0, 0.589),rgba(26, 26, 26, 0.713));
@@ -47,7 +50,7 @@ nav{
 .h{
     position: absolute;
     margin-top: 6em;
-    font-size: 10px;
+    font-size: 0.7rem;
     color:rgb(34, 126, 225);
 }
 article{
@@ -58,6 +61,7 @@ article{
     border-radius:2.2em;
     text-align: center;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.53);
+    font-size: 1.2em;
 }
 section{
     padding:5%;
@@ -187,6 +191,14 @@ padding: 3em;
 background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.745), rgba(2, 109, 202, 0.538));
 border-radius: 2.2em;
 margin-bottom: 2em;
+}
+iframe {
+    max-width: 100%; 
+    display: block;
+    height: 27em;
+    width:48em;
+    margin:auto;
+
 }
 
 form input,
