@@ -29,7 +29,7 @@ a:hover{
 nav{
     position: sticky;
     top:6em;
-    width:70em;
+    width:fit-content;
     border-radius: 9em;
     padding: 1em;
     border: 1px solid rgba(255, 255, 255, 0.275);
@@ -38,6 +38,7 @@ nav{
     font-size: 1em;
     display: flex;
     justify-content: center;
+    overflow: hidden;
     margin:auto;
     gap: 4em;
     z-index: 1000;
