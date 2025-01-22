@@ -7,22 +7,22 @@
     
 }/* Styles for larger screens */
 @media (min-width: 768px) {
-  .container {
+  *{
     width: 80%;
   }
 
-  h1 {
+    *{
     font-size: 3rem;
   }
 }
 
 /* Styles for smaller screens */
 @media (max-width: 767px) {
-  .container {
+*{
     width: 95%;
   }
 
-  h1 {
+*{
     font-size: 2rem;
   }
 }
