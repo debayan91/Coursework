@@ -79,17 +79,9 @@ hr{
 
 }
 span{
-    color:rgb(34, 126, 225);font-weight: bold;
+    color:rgb(34, 126, 225);
+    font-weight: bold;
     font-size : 1.2em;
-
-}
-b{
-    font-size : 1.2em;
-
-}
-i{
-    font-size : 1.2em;
-
 }
 .s{
     font-weight:100;
